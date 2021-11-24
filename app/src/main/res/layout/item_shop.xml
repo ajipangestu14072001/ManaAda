@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/title"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="30dp"
+            android:text="Title"
+            android:textSize="45sp"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/relative_back"
+            android:layout_height="match_parent"
+            android:background="@drawable/back_cappu">
+
+            <ImageView
+                android:id="@+id/decoration"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/coffee" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="50dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/subTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Content"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="20dp"
+                    android:textSize="35sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/white"
+                    android:id="@+id/description"
+                    android:textSize="18sp"
+                    android:text="Now, when you write code and type lore (which represents the name attribute value of the template tag above), and hit CTRL + SPACE , then it will automatically insert the lorem"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="450dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="-400dp"
+        android:id="@+id/iv_image"
+        android:src="@drawable/cup_mocha"/>
+
+</LinearLayout>
